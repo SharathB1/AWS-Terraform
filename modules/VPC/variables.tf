@@ -1,5 +1,6 @@
 variable "aws_region" {
   description = "AWS region for VPC"
+  default     = "us-east-1"
 }
 
 variable "vpc_cidr" {
@@ -8,29 +9,25 @@ variable "vpc_cidr" {
 
 variable "vpc_name" {
   description = "Name for the VPC"
+  default     = "MyVPC"
 }
 
-variable "public_subnet_cidrs" {
+variable "public_subnet_cidr" {
   description = "List of public subnet CIDR blocks"
-  type        = list(string)
+  type        = string
 }
 
-variable "private_subnet_cidrs" {
+variable "private_subnet_cidr" {
   description = "List of private subnet CIDR blocks"
-  type        = list(string)
+  type        = string
 }
 
-variable "availability_zones" {
+variable "availability_zone" {
   description = "List of availability zones"
-  type        = list(string)
+  type        = string
+  default     = "us-east-1a"
 }
 
-variable "flow_log_log_group_name" {
-  description = "Name of the CloudWatch Logs log group for Flow Logs"
-  type        = string
-}
 
-variable "flow_log_log_group_arn" {
-  description = "ARN of the CloudWatch Logs log group for Flow Logs"
-  type        = string
-}
+
+

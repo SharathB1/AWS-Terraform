@@ -18,12 +18,4 @@ output "internet_gateway_id" {
   value       = aws_internet_gateway.igw.id
 }
 
-output "nat_gateway_ids" {
-  description = "IDs of the NAT Gateways"
-  value       = aws_nat_gateway.nat[*].id
-}
 
-output "flow_log_ids" {
-  description = "IDs of the Flow Logs"
-  value       = aws_flow_log.vpc[*].id
-}
