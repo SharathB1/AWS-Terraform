@@ -9,17 +9,16 @@ variable "vpc_cidr" {
 
 variable "vpc_name" {
   description = "Name for the VPC"
-  default     = "MyVPC"
 }
 
 variable "public_subnet_cidr" {
   description = "List of public subnet CIDR blocks"
-  type        = string
+  type        = list(string)
 }
 
 variable "private_subnet_cidr" {
   description = "List of private subnet CIDR blocks"
-  type        = string
+  type        = list(string)
 }
 
 variable "availability_zone" {
