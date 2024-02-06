@@ -15,5 +15,5 @@ variable "instance_name" {
 }
 
 variable "key_pair_name" {
-  desccription = "Key pair to attach"
+  description = "Key pair to attach"
 }
