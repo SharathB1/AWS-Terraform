@@ -40,3 +40,5 @@ Sets up route tables.
 **Security Groups**
 
 Creates security groups to control inbound and outbound traffic.
+
+Serverless Architecture, WebApplication Infrastructure.
